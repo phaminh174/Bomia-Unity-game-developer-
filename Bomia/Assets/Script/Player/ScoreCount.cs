@@ -7,7 +7,7 @@ public class ScoreCount : MonoBehaviour
     public PlayGroundCanvas PlayGround;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Score"))
+        if (other.CompareTag("Pipe"))
         {
             PlayGround.AddScore();
         }
